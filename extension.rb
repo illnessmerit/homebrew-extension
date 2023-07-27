@@ -5,6 +5,11 @@ class Extension < Formula
   depends_on "node"
 
   def install
+    # We need to copy the whole directory including output/Main because
+    # 'spago build' is being used instead of 'spago bundle-app' due to a
+    # problem with dynamic require of 'stream' when using 'bundle-app'.
+    # 'spago build' generates 'index.js' in './output/Main/', which needs
+    # to be available in the working directory for import.
     libexec.install Dir["*"]
     bin.install_symlink libexec/"index.js" => "extension"
   end
