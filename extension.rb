@@ -1,7 +1,7 @@
 # TODO: Format document
 class Extension < Formula
-  url "https://github.com/8ta4/extension/releases/download/v0.1.1/extension.tar.gz"
-  sha256 "827253f5f50ebe8bab04a3ca6687394dd05e42d949731ea01ae610a9a90eaddf"
+  url "https://github.com/8ta4/extension/releases/download/v0.1.2/extension.tar.gz"
+  sha256 "aa475e638c0b329d88d22afa973b66ffb85c2c801cc1e2df1a22b170e651b2ba"
 
   depends_on "node"
 
