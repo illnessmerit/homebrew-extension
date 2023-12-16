@@ -24,6 +24,7 @@ jobs:
       - name: Build the devenv shell and run any pre-commit hooks
         run: devenv ci
 
+      # https://github.com/Homebrew/actions/blob/55e35ac78132cc31ce174408f40a9676e64aa0e2/setup-homebrew/README.md?plain=1#L10-L12
       - name: Set up Homebrew
         id: set-up-homebrew
         uses: Homebrew/actions/setup-homebrew@55e35ac78132cc31ce174408f40a9676e64aa0e2
