@@ -12,6 +12,8 @@ jobs:
         os: [macos-latest]
     runs-on: ${{ matrix.os }}
     env:
+      # HOMEBREW_NO_INSTALLED_DEPENDENTS_CHECK is set to 1 to disable the automatic upgrade of formulae during the brew install process.
+      # This can help prevent unexpected failures in GitHub Actions.
       HOMEBREW_NO_INSTALLED_DEPENDENTS_CHECK: 1
     steps:
       - uses: actions/checkout@v4
