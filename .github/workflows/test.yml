@@ -27,3 +27,6 @@ jobs:
       # https://github.com/Homebrew/actions/blob/55e35ac78132cc31ce174408f40a9676e64aa0e2/setup-homebrew/README.md?plain=1#L10-L12
       - name: Set up Homebrew
         uses: Homebrew/actions/setup-homebrew@55e35ac78132cc31ce174408f40a9676e64aa0e2
+
+      - name: Install formula
+        run: brew install --formula extension.rb
