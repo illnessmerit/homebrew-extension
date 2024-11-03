@@ -2,8 +2,8 @@
 
 # This class represents a Homebrew formula for the extension project.
 class Extension < Formula
-  url 'https://github.com/8ta4/extension/releases/download/v0.2.0/extension.tar.gz'
-  sha256 '4854f977628ee0947e4031a497629535f84bbbdecbb9a084591a8b7aefb6fabe'
+  url 'https://github.com/8ta4/extension/releases/download/v0.2.1/extension.tar.gz'
+  sha256 '3a72758fa641602b977601f5977691a905525c29cd0c7e7b8be0f794c11d60da'
   depends_on 'node'
   def install
     # We need to copy the whole directory including output/Main because
