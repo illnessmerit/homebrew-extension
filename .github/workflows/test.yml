@@ -32,5 +32,4 @@ jobs:
         uses: Homebrew/actions/setup-homebrew@646376e6958cd0bf5f97dbc589637255c018d8f0 # main
 
       - name: Install formula
-        # Without this `--formula`, Homebrew tries to interpret `extension.rb` as a cask, leading to a warning.
-        run: brew install --formula extension.rb
+        run: brew install extension
